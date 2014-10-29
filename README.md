@@ -1,4 +1,4 @@
 thessrbio
 =========
 
-**Thessaloniki Ruby Meetup home**
+*Thessaloniki Ruby Meetup home*
