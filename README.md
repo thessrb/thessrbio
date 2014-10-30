@@ -3,4 +3,4 @@ thessrbio
 
 *Thessaloniki Ruby Meetup Home*
 
-This is ruby community project
+This is a ruby community project
