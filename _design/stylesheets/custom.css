@@ -1,0 +1,59 @@
+#header_wrap .inner {
+  padding-bottom: 0px;
+}
+
+#menu {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #fff;
+}
+
+#menu span.current {
+  display: inline-block;
+  padding: 10px;
+  margin-right: 20px;
+  margin-bottom: -5px;
+  background-color: rgb(242, 242, 242);
+  color :rgb(55, 55, 55);
+}
+
+#menu a {
+  display: inline-block;
+  padding: 10px;
+  margin-right: 20px;
+  margin-bottom: -5px;
+  color: #fff;
+}
+
+#forkme_banner {
+  display: block;
+  position: absolute;
+  top:0;
+  right: 10px;
+  z-index: 10;
+  padding: 10px 10px 10px 10px;
+  color: #fff;
+  background: #0090ff;
+  font-weight: 700;
+  box-shadow: 0 0 10px rgba(0,0,0,.5);
+  border-bottom-left-radius: 2px;
+  border-bottom-right-radius: 2px;
+}
+
+.shoutout {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background-color: #000;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+}
+
+ul.members-list {
+  margin-top : 30px;
+}
+
+ul.members-list li span.name {
+  font-weight: bold;
+}
+
