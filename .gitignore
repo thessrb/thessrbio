@@ -17,3 +17,7 @@
 
 # Exclude .gems folder where all our local gems will be installed
 .gems
+
+# Exclude Mac OS X temp files
+.DS_Store
+
