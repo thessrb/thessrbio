@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="description" content="Thessaloniki Ruby Meetup (thessrb) : Official thessaloniki.rb repository">
   <%= stylesheet_link_tag 'application' %>
-  <title>Thessaloniki Ruby Meetup (thessrb.io)</title>
+  <title>Thessaloniki Ruby Meetup (thessrb.io) <%= @title %></title>
 </head>
 <body>
   <!-- HEADER -->
@@ -16,8 +16,13 @@
       <h2 id="project_tagline">Official Thessaloniki Ruby Meetup Home</h2>
 
       <section id="menu">
-        <span class="current">Home</span>
-        <a class="" href="members">Members</a>
+        <% if @current_page == 'home' %>
+          <span class="current">Home</span>
+          <a class="" href="members">Members</a>
+        <% elsif @current_page == 'members' %>
+          <a class="" href="/">Home</a>
+          <span class="current">Members</span>
+        <% end %>
       </section>
     </header>
   </div>
