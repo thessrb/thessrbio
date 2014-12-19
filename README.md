@@ -39,10 +39,10 @@ git clone git@github.com:thessrb/thessrbio.git
 Change directory to `path/to/thessrbio` and execute:
 
 ```bash
-bundle install --without heroku
+bundle install --without production
 ```
 
-Using `--without heroku` will install only the dependencies needed during development or local testing so that you don't have to install [PostgreSQL](http://www.postgresql.org/) locally in your system.
+Using `--without production` will install only the dependencies needed during development or local testing so that you don't have to install [PostgreSQL](http://www.postgresql.org/) locally in your system.
 
 The first time you run this, it will create a `.bundle/config` file (which is git ignored) so that Bundler can "remember" your options.
 
