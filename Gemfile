@@ -44,7 +44,7 @@ group :development do
   gem 'sqlite3'
 end
 
-group :heroku do
-  gem 'pg', '0.17.1'
-  gem 'rails_12factor', '0.0.2'
+group :production do
+  gem 'pg'
+  gem 'rails_12factor'
 end

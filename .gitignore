@@ -21,3 +21,6 @@
 # Exclude Mac OS X temp files
 .DS_Store
 
+# Exclude public/assets which can be produce from rake tasks
+public/assets
+ 
