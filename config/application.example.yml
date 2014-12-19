@@ -1,0 +1,3 @@
+# Add configuration values here, as shown below.
+SECRET_KEY_BASE: "Please change the key here by generating a secret with 'rake secret' in your console and then pasting the value here"
+SERVE_ASSETS_IN_PRODUCTION_FROM_RAILS: "true"

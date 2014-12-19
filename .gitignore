@@ -24,3 +24,6 @@
 # Exclude public/assets which can be produce from rake tasks
 public/assets
  
+
+# Ignore application configuration
+/config/application.yml

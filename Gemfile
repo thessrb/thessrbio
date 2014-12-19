@@ -25,6 +25,12 @@ gem 'spring',             group: :development     # Spring speeds up development
 ############# Environment/Runtime ##################################
 gem 'therubyracer',       platforms: :ruby        # Use this gem (Google V8 embedded within Ruby) instead of Node.js to avoid problems in collaboration. See https://github.com/sstephenson/execjs#readme for more supported runtimes
 
+############# Configuration #######################################
+gem 'figaro', '~> 1.0.0'                          # For reading environment viraibles from config/application.yml. See https://github.com/laserlemon/figaro
+gem 'wannabe_bool', '~> 0.1.0'                    # For converting string, integer, symbol and nil values to a boolean value with #to_b method, helper for using the figaro gem values
+
+
+
 
 ############# DEVELOPMENT ONLY ####################################
 group :development do
