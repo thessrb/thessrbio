@@ -52,8 +52,8 @@ class MembersController < ApplicationController
     members << {
         name: "Valantis Kamayiannis",
         brief: "Software engineer, drummer and proud dad",
-        github: "basiliskav",
-        twitter: "basilis_kav",
+        github: "vkamayiannis",
+        twitter: "vkamayiannis",
         website: nil
     }
 
