@@ -57,6 +57,14 @@ class MembersController < ApplicationController
         website: nil
     }
 
+    members << {
+      name: "Konstantinos Kostopoulos",
+      brief: "Life admirer,converting coffee into running code",
+      github: "kostopoulos",
+      twitter: "kostaskostop",
+      website: nil
+    }
+    
     members
   end
 
