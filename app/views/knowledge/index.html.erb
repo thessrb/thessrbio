@@ -1,0 +1,29 @@
+<%
+
+@current_page = "knowledge"
+@title = ""
+
+%>
+
+<div id="main_content_wrap" class="outer">
+  <section id="main_content" class="inner">
+  <p>We like open-source. We also like Ruby. We love Rails.</p>
+  <p>This is the very reason we want our knowledge base to be open for everyone</p>
+  <p>Below, you can find our presentations, up until now</p>
+  
+  <table>
+	  <tr>
+	  	<th>Title</th>
+	  	<th>Date</th>
+	  	<th>Description</th>
+	  </tr>
+	  	<% @presentations.each do |presentation|%>
+	  	<tr>
+	  		<td><%= link_to presentation.title, presentation.url %></td>
+	  		<td><%= presentation.date_presented %></td>
+	  		<td><%= presentation.description %></td>
+	  	</tr>
+	  	<% end %>
+  </table>
+  </section>
+</div>

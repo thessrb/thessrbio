@@ -5,3 +5,11 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+
+# TODO: Add presentation details here
+presentations = [{:title => '', :url => '', :date_presented => '', :description => ''},
+	]
+
+presentations.each do |presentation|
+	Presentation.create!(presentation)
+end
