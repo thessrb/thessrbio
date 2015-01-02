@@ -13,9 +13,9 @@
   
   <table>
 	  <tr>
-	  	<th>Title</th>
-	  	<th>Date</th>
-	  	<th>Details</th>
+	  	<th><%= link_to 'Title', {:controller => 'knowledge', :action => 'index', :sort_by => 'title'}, :class => 'sort_header'%></th>
+	  	<th><%= link_to 'Date', {:controller => 'knowledge', :action => 'index', :sort_by => 'date'}, :class => 'sort_header'%></th>
+	  	<th><%= link_to 'Details', {:controller => 'knowledge', :action => 'index', :sort_by => 'presentor'}, :class => 'sort_header'%></th>
 	  </tr>
 	  	<% @presentations.each do |presentation|%>
 	  	<tr>
