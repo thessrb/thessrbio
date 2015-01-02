@@ -17,7 +17,7 @@ ActiveRecord::Schema.define(version: 20150101) do
     t.string   "title"
     t.string   "url"
     t.datetime "date_presented"
-    t.text     "description"
+    t.text     "presentor"
   end
 
 end

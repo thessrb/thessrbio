@@ -4,7 +4,7 @@ class CreatePresentations < ActiveRecord::Migration
 			t.string :title
 			t.string :url
 			t.datetime :date_presented
-			t.text :description
+			t.text :presentor
 		end
 	end
 

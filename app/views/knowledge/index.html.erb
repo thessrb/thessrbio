@@ -7,7 +7,7 @@
 
 <div id="main_content_wrap" class="outer">
   <section id="main_content" class="inner">
-  <p>We like open-source. We also like Ruby. We love Rails.</p>
+  <p>We like open-source. We also like Ruby and Rails framework. We love fiddling around with technology.</p>
   <p>This is the very reason we want our knowledge base to be open for everyone</p>
   <p>Below, you can find our presentations, up until now</p>
   
@@ -15,13 +15,13 @@
 	  <tr>
 	  	<th>Title</th>
 	  	<th>Date</th>
-	  	<th>Description</th>
+	  	<th>Details</th>
 	  </tr>
 	  	<% @presentations.each do |presentation|%>
 	  	<tr>
 	  		<td><%= link_to presentation.title, presentation.url %></td>
-	  		<td><%= presentation.date_presented %></td>
-	  		<td><%= presentation.description %></td>
+	  		<td><%= presentation.date_presented.strftime("%d/%m/%Y") %></td>
+	  		<td>Presented by <%= presentation.presentor %>.</td>
 	  	</tr>
 	  	<% end %>
   </table>

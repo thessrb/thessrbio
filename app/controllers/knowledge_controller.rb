@@ -7,6 +7,6 @@ class KnowledgeController < ApplicationController
 	private
 
 	def presentation_params
-		params.require(:presentation).permit(:title, :url, :description, :date_presented)
+		params.require(:presentation).permit(:title, :url, :presentor, :date_presented)
 	end
 end
