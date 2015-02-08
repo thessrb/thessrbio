@@ -15,7 +15,7 @@
 	  <tr>
 	  	<th><%= link_to 'Title', {:controller => 'presentations', :action => 'index', :sort_by => 'title'}, :class => 'sort_header'%></th>
 	  	<th><%= link_to 'Date', {:controller => 'presentations', :action => 'index', :sort_by => 'date'}, :class => 'sort_header'%></th>
-	  	<th><%= link_to 'Details', {:controller => 'presentations', :action => 'index', :sort_by => 'presentor'}, :class => 'sort_header'%></th>
+	  	<th><%= link_to 'Details', {:controller => 'presentations', :action => 'index', :sort_by => 'presenter'}, :class => 'sort_header'%></th>
 	  </tr>
 	  	<% @presentations.each do |presentation|%>
 	  	<tr>
