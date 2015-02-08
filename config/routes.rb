@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
   root 'home#index'
   get 'members', :to => 'members#index'
+  get 'presentations', :to => 'presentations#index'
 
 
 
