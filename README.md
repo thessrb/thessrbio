@@ -61,7 +61,14 @@ Go on! Test this out, run the above command to see that it is OK.
 rake
 ```
 
-### Step 4. Run the Rails server and enjoy...
+### Step 4. Create and populate the database
+
+```bash
+rake db:create;rake db:migrate;rake db:seed
+```
+
+
+### Step 5. Run the Rails server and enjoy...
 
 ```bash
 bin/rails s

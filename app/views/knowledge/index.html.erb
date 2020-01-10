@@ -1,0 +1,29 @@
+<%
+
+@current_page = "knowledge"
+@title = ""
+
+%>
+
+<div id="main_content_wrap" class="outer">
+  <section id="main_content" class="inner">
+  <p>We like open-source. We also like Ruby and Rails framework. We love fiddling around with technology.</p>
+  <p>This is the very reason we want our knowledge base to be open for everyone</p>
+  <p>Below, you can find our presentations, up until now</p>
+  
+  <table>
+	  <tr>
+	  	<th><%= link_to 'Title', {:controller => 'knowledge', :action => 'index', :sort_by => 'title'}, :class => 'sort_header'%></th>
+	  	<th><%= link_to 'Date', {:controller => 'knowledge', :action => 'index', :sort_by => 'date'}, :class => 'sort_header'%></th>
+	  	<th><%= link_to 'Details', {:controller => 'knowledge', :action => 'index', :sort_by => 'presentor'}, :class => 'sort_header'%></th>
+	  </tr>
+	  	<% @presentations.each do |presentation|%>
+	  	<tr>
+	  		<td><%= link_to presentation.title, presentation.url %></td>
+	  		<td><%= presentation.date_presented.strftime("%d/%m/%Y") %></td>
+	  		<td>Presented by <%= presentation.presentor %>.</td>
+	  	</tr>
+	  	<% end %>
+  </table>
+  </section>
+</div>

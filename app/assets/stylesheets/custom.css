@@ -55,3 +55,14 @@ ul.members-list li span.name {
   font-weight: bold;
 }
 
+.sort_header {
+  font-family: 'Lucida Grande', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  padding: 10px;
+  background: #373737;
+  color: #fff;
+}
+
+.sort_header:hover, .sort_header:focus {
+  text-decoration: underline;
+}
+
