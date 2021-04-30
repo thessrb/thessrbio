@@ -16,13 +16,20 @@
       <h2 id="project_tagline">Official Thessaloniki Ruby Meetup Home</h2>
 
       <section id="menu">
-        <% if @current_page == 'home' %>
-          <span class="current">Home</span>
-          <a class="" href="members">Members</a>
-        <% elsif @current_page == 'members' %>
-          <a class="" href="/">Home</a>
-          <span class="current">Members</span>
-        <% end %>
+        <% case @current_page
+            when 'home' %>
+            <span class="current">Home</span>
+            <a class="" href="members">Members</a>
+            <a class="" href="presentations">Presentations</a>
+          <% when 'members' %>
+            <a class="" href="/">Home</a>
+            <span class="current">Members</span>
+            <a class="" href="presentations">Presentations</a>
+          <% when 'presentations' %>
+            <a class="" href="/">Home</a>
+            <a class=""  href="members">Members</a>
+            <span class="current" href="presentations">Presentations</span>
+          <% end %>
       </section>
     </header>
   </div>

@@ -27,3 +27,6 @@ public/assets
 
 # Ignore application configuration
 /config/application.yml
+
+# Ignore .swp files
+*.swp
